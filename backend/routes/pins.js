@@ -13,8 +13,14 @@ router.post('/', async (req, res) => {
 })
 
 // get all pins
-
-
+router.get('/', async (req, res) => {
+    try {
+        const pins = await Pins.find();
+        res.status(200).json(pins);
+    } catch (error) {
+        res.status(500).json(error);
+    }
+})
 
 
 
