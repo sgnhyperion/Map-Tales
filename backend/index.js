@@ -4,9 +4,10 @@ require("dotenv").config();
 const app = express();
 const PinsRoute = require("./routes/pins");
 const UsersRoute = require("./routes/users");
+const cors = require("cors");
 
 app.use(express.json());
-app.use(cors())
+app.use(cors({ origin: 'http://localhost:3000' }));
 
 mongoose.connect(process.env.DB_URL)
 .then(()=>{
@@ -20,6 +21,7 @@ PORT= process.env.PORT || 5000
 
 app.use("/api/pins", PinsRoute);
 app.use("/api/users", UsersRoute);
+
 
 app.listen(PORT, ()=>{
     console.log(`Server is running on port ${PORT}`);
