@@ -8,7 +8,7 @@ import {format} from 'timeago.js'
 import axios from 'axios';
 
 function App() {
-  const url = 'http://localhost:3300/api/pins'
+  const url = process.env.REACT_APP_API_URL+"/pins";
   const [pins, setPins] = useState([]);
   const [currentPlaceId, setCurrentPlaceId] = useState(null);
   const [currentUser, setCurrentUser] = useState("Harsh"); // You might want to set this from login
