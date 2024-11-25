@@ -35,10 +35,10 @@ const PinSchema = new mongoose.Schema({
         required: true
     },
 
-    imageUrl: {
-        type: String, // Store the URL of the uploaded image
-        required: true
-    }
+    // imageUrl: {
+    //     type: String, // Store the URL of the uploaded image
+    //     required: true
+    // }
 },
     {timestamps: true}
 );

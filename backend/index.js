@@ -6,6 +6,7 @@ const PinsRoute = require("./routes/pins");
 const UsersRoute = require("./routes/users");
 
 app.use(express.json());
+app.use(cors())
 
 mongoose.connect(process.env.DB_URL)
 .then(()=>{
