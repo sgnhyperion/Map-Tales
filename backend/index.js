@@ -7,7 +7,7 @@ const UsersRoute = require("./routes/users");
 const cors = require("cors");
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: "https://map-tales-frontend.vercel.app/" }));
 app.use('/uploads', express.static('uploads'));
 
 
