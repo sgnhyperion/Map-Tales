@@ -34,10 +34,8 @@ const PinSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-
-    // imageUrl: {
-    //     type: String, // Store the URL of the uploaded image
-    //     required: true
+    // image: {
+    //     type: String, 
     // }
 },
     {timestamps: true}

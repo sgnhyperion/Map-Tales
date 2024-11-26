@@ -8,6 +8,8 @@ const cors = require("cors");
 
 app.use(express.json());
 app.use(cors({ origin: 'http://localhost:3000' }));
+app.use('/uploads', express.static('uploads'));
+
 
 mongoose.connect(process.env.DB_URL)
 .then(()=>{

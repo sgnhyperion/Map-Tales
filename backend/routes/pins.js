@@ -3,8 +3,8 @@ const Pin = require("../models/Pin");
 const multer = require('multer');
 //create a pin
 router.post('/', async (req, res) => {
-    const newPin = new Pin(req.body);
     try {
+        const newPin = new Pin(req.body);
         const savedPin = await newPin.save();
         res.status(200).json(savedPin);
     } catch (err) {
