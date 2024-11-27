@@ -13,6 +13,8 @@ This is a full-stack web application that allows users to pin locations on a map
 - **Database**: MongoDB
   - NoSQL database for flexible, schema-less data storage
   - Ideal for storing location-based information with varying attributes
+ - **API**: MapBox
+  - used react-map-gl library to integrate map
 
 ## Prerequisites
 - Node.js (v14 or later)
