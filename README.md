@@ -75,6 +75,9 @@ npm start
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## TroubleShoot
+The loading of map takes time, so if the application doesn't work please reopen the like 4-5 time and it will start working
+
 
 ## Contact
 Harsh Kumar - harsh.23bcs10116@sst.scaler.com
