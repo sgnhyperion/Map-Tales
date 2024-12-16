@@ -1,9 +1,6 @@
 # Location Pinning Map Application
 
 
-## Note
-The loading of map takes time, so if the application doesn't work please reopen the link 4-5 time and it will start working
-
 ## Project Overview
 This is a full-stack web application that allows users to pin locations on a map and add detailed information about each pinned location. Users can double-click on the map to create a pin and then fill out a form with additional details.
 
